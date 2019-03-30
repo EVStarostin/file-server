@@ -1,5 +1,11 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  form(name='upload' method='post' enctype='multipart/form-data' action='/upload')
+    fieldset
+      legend Загрузка файлов
+      p
+        input(type='file' id='file' name='file')
+      p
+        button Отправить
+      div(id='log')

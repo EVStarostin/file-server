@@ -15,7 +15,7 @@ const upload = multer({ storage: storage })
 
 router.post('/', upload.single('file'), function (req, res, next) {
   if (req.file) {
-    console.log('file uploaded');
+    console.log('File uploaded');
   }
 
   res.redirect('/');
