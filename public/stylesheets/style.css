@@ -6,3 +6,35 @@ body {
 a {
   color: #00B7FF;
 }
+
+
+.upload {
+  font-size: 1em
+}
+
+.upload__fieldset {
+  border: 5px solid #eee;
+  position: relative;
+}
+
+.upload__heading {
+  padding: 0.5em 1em;
+  border: 5px solid #eee;
+  background-color: #fff;
+}
+
+.upload__file {
+  position: relative;
+  z-index: 1;
+}
+
+.upload__log {
+  padding: 5px;
+}
+
+@media (max-width: 575.98px) {
+  body {
+    padding: 10px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  }
+}

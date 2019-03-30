@@ -1,11 +1,11 @@
 extends layout
 
 block content
-  form(name='upload' method='post' enctype='multipart/form-data' action='/upload')
-    fieldset
-      legend Загрузка файлов
+  form(class="upload" name='upload' method='post' enctype='multipart/form-data' action='/upload')
+    fieldset(class='upload__fieldset')
+      legend(class='upload__heading') Загрузка файлов
       p
-        input(type='file' id='file' name='file')
+        input(type='file' class='upload__file' id='file' name='file')
       p
-        button Отправить
-      div(id='log')
+        input(type='submit' class='upload__submit' value='Отправить')
+    div(class='upload__log' id='log')
