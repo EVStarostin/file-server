@@ -40,6 +40,10 @@ function upload(formData) {
 
 document.forms.upload.onsubmit = function(e) {
     e.preventDefault();
+    
+    if (!file.value) {
+        return;
+    }
 
     var formData = new FormData(this);
 
